@@ -1,0 +1,20 @@
+name: 'Pull Request title checker for Jira ticket'
+description: 'Checks that the Pull Request title starts with a Jira ticket'
+inputs:
+  jira-project-key:
+    description: 'The Jira project key of the repository (i.e. SYC)'
+    required: true
+  no-ticket-prefix:
+    description: 'The prefix allowed for Pull Requests without a Jira ticket (i.e. NoTicket)'
+    required: false
+  ignore-case:
+    description: 'Perform a case insensitive check'
+    required: false
+    default: false
+  verbose:
+    description: 'Log the JSON webhook payload for the event that triggered the workflow'
+    required: false
+    default: false
+runs:
+  using: 'node12'
+  main: 'index.js'

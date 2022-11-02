@@ -1,0 +1,24 @@
+{
+  "name": "pr-title-checker-jira-ticket",
+  "version": "1.0.0",
+  "description": "A GitHub action which ensures that all Pull Requests start with a Jira ticket",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoneyBox/PR-Title-Checker-Jira-Ticket.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MoneyBox/PR-Title-Checker-Jira-Ticket/issues"
+  },
+  "homepage": "https://github.com/MoneyBox/PR-Title-Checker-Jira-Ticket#readme",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0"
+  }
+}
